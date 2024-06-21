@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['matchclients_0',['MatchClients',['../class_dojo_1_1_dojo_connection.html#a1ba8b2e9a280497ca74c823bc95b7e70',1,'Dojo::DojoConnection']]],
+  ['matchid_1',['MatchId',['../class_dojo_1_1_nakama_1_1_r_p_c_create_match_payload.html#aaf389ea0dda68af5d205a2313c022a15',1,'Dojo.Nakama.RPCCreateMatchPayload.MatchId()'],['../class_dojo_1_1_nakama_1_1_match_storage_data.html#addd60ecd96cfcd2753eaa30fc9ee2d22',1,'Dojo.Nakama.MatchStorageData.MatchId()']]],
+  ['maxnumplayers_2',['MaxNumPlayers',['../class_dojo_1_1_nakama_1_1_nakama_config.html#af76df79f19622ec7dc55ff7a4c05ea9f',1,'Dojo.Nakama.NakamaConfig.MaxNumPlayers()'],['../class_dojo_1_1_nakama_1_1_r_p_c_join_or_new_match_payload.html#a5a72075263b29063773aa771a9b622a8',1,'Dojo.Nakama.RPCJoinOrNewMatchPayload.MaxNumPlayers()'],['../class_dojo_1_1_nakama_1_1_r_p_c_create_match_payload.html#a0691344ed3108596e0465ab8502f905a',1,'Dojo.Nakama.RPCCreateMatchPayload.MaxNumPlayers()'],['../class_dojo_1_1_nakama_1_1_r_p_c_query_matches_payload.html#a31bb52c91f5c340ade7c2052d1e6e811',1,'Dojo.Nakama.RPCQueryMatchesPayload.MaxNumPlayers()'],['../class_dojo_1_1_nakama_1_1_match_storage_data.html#afd417453cd64dc6c055434a61e24d798',1,'Dojo.Nakama.MatchStorageData.MaxNumPlayers()']]],
+  ['maxnumrecords_3',['MaxNumRecords',['../class_dojo_1_1_nakama_1_1_r_p_c_query_matches_payload.html#a2e48acf8184419595b837147357cb03d',1,'Dojo::Nakama::RPCQueryMatchesPayload']]]
+];

@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['rawdata_0',['RawData',['../class_dojo_1_1_dojo_message.html#a89820f898238ee96f8de3daf1c5b433f',1,'Dojo::DojoMessage']]],
+  ['readonly_1',['Readonly',['../class_dojo_1_1_u_i_1_1_components_1_1_dojo_menu_connect.html#a5f5a75c00fbf59be0451e97d0178d7ab',1,'Dojo.UI.Components.DojoMenuConnect.Readonly()'],['../class_dojo_1_1_u_i_1_1_components_1_1_dojo_menu_matches.html#af22d97ba7f1effc49b42250414455720',1,'Dojo.UI.Components.DojoMenuMatches.Readonly()']]],
+  ['recordevent_2',['RecordEvent',['../namespace_dojo_1_1_nakama.html#a795f9d07fa57022404b2f7030a88c79ba0ac2939d91e81c371392b6e338aea8b5',1,'Dojo::Nakama']]],
+  ['recordquery_3',['RecordQuery',['../namespace_dojo_1_1_nakama.html#a795f9d07fa57022404b2f7030a88c79ba9b4d6c4ccab26d4d9f422bcf0d5f046b',1,'Dojo::Nakama']]],
+  ['recordstart_4',['RecordStart',['../namespace_dojo_1_1_nakama.html#a795f9d07fa57022404b2f7030a88c79baeea05e9d64e16b2be846a3cec127bb91',1,'Dojo::Nakama']]],
+  ['recordstop_5',['RecordStop',['../namespace_dojo_1_1_nakama.html#a795f9d07fa57022404b2f7030a88c79ba49f2469d919db74636fdc4e6d63ff42d',1,'Dojo::Nakama']]],
+  ['registeraiplayers_6',['RegisterAIPlayers',['../class_dojo_1_1_dojo_connection.html#aa84065ce6ac59634571dc450d71cdcfc',1,'Dojo::DojoConnection']]],
+  ['registerswitchrolerule_7',['RegisterSwitchRoleRule',['../class_dojo_1_1_dojo_connection.html#a41c22f6eb4e5f95eaedea210b4ece8cd',1,'Dojo::DojoConnection']]],
+  ['relativesize_8',['RelativeSize',['../class_dojo_1_1_agent_1_1_image_capture_sensor_component.html#a84836429f96ee286c2c242b757fcb195',1,'Dojo::Agent::ImageCaptureSensorComponent']]],
+  ['removeuseraccount_9',['RemoveUserAccount',['../class_dojo_1_1_nakama_1_1_nakama_r_p_c.html#a3581839b905fc753951ec30d5c2f3581',1,'Dojo::Nakama::NakamaRPC']]],
+  ['reset_10',['Reset',['../class_dojo_1_1_nakama_1_1_nakama_r_t_t.html#a421978afe437cd0281f6337b58ee5a33',1,'Dojo::Nakama::NakamaRTT']]],
+  ['resetclientslist_11',['ResetClientsList',['../class_dojo_1_1_u_i_1_1_components_1_1_dojo_menu_clients.html#a3985d1608e0377ac5daf3f987bc8e461',1,'Dojo::UI::Components::DojoMenuClients']]],
+  ['resetmatcheslist_12',['ResetMatchesList',['../class_dojo_1_1_u_i_1_1_components_1_1_dojo_menu_matches.html#a5815605022d804de1f3553bcf5d1121f',1,'Dojo::UI::Components::DojoMenuMatches']]],
+  ['returnnetworkobject_13',['ReturnNetworkObject',['../class_dojo_1_1_netcode_1_1_dojo_netcode_object_pool.html#a4126dfdee1136477c6fef1bf9479d6fe',1,'Dojo::Netcode::DojoNetcodeObjectPool']]],
+  ['role_14',['Role',['../class_dojo_1_1_dojo_connection.html#a14ca69c37e8fabe879db92b1422e11cf',1,'Dojo.DojoConnection.Role()'],['../class_dojo_1_1_u_i_1_1_components_1_1_dojo_menu_status.html#afa292543895d7f334ae32e3faebfbb61',1,'Dojo.UI.Components.DojoMenuStatus.Role()']]],
+  ['rpccleanmatchpayload_15',['RPCCleanMatchPayload',['../class_dojo_1_1_nakama_1_1_r_p_c_clean_match_payload.html',1,'Dojo::Nakama']]],
+  ['rpccreatematchpayload_16',['RPCCreateMatchPayload',['../class_dojo_1_1_nakama_1_1_r_p_c_create_match_payload.html',1,'Dojo::Nakama']]],
+  ['rpcjoinornewmatchpayload_17',['RPCJoinOrNewMatchPayload',['../class_dojo_1_1_nakama_1_1_r_p_c_join_or_new_match_payload.html',1,'Dojo::Nakama']]],
+  ['rpcquerymatchespayload_18',['RPCQueryMatchesPayload',['../class_dojo_1_1_nakama_1_1_r_p_c_query_matches_payload.html',1,'Dojo::Nakama']]],
+  ['rpcquerymatchpayload_19',['RPCQueryMatchPayload',['../class_dojo_1_1_nakama_1_1_r_p_c_query_match_payload.html',1,'Dojo::Nakama']]],
+  ['rpcremoveuseraccountpayload_20',['RPCRemoveUserAccountPayload',['../class_dojo_1_1_nakama_1_1_r_p_c_remove_user_account_payload.html',1,'Dojo::Nakama']]],
+  ['rpcupdatematchpayload_21',['RPCUpdateMatchPayload',['../class_dojo_1_1_nakama_1_1_r_p_c_update_match_payload.html',1,'Dojo::Nakama']]],
+  ['rttack_22',['RTTAck',['../namespace_dojo_1_1_nakama.html#a795f9d07fa57022404b2f7030a88c79ba24091c91cce90fc474b93281bd8a1d15',1,'Dojo::Nakama']]],
+  ['rttacksync_23',['RTTAckSync',['../namespace_dojo_1_1_nakama.html#a795f9d07fa57022404b2f7030a88c79babe5bfc76e2e3f62a6fd86c30bc5bccde',1,'Dojo::Nakama']]],
+  ['rttsync_24',['RTTSync',['../namespace_dojo_1_1_nakama.html#a795f9d07fa57022404b2f7030a88c79ba0af621009fca13180828ab95b3ebca49',1,'Dojo::Nakama']]]
+];
