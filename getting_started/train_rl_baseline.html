@@ -1143,8 +1143,7 @@
 
 <h1 id="train-an-reinforcement-learning-baseline">Train an Reinforcement Learning Baseline</h1>
 <p>RL algorithms are common baselines for measuring AI Agent performance in Human-AI teaming research. Once CREW is installed and the <code>crew</code> conda environment is activated, simply navigate under crew-algorithms and run:</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>crew_algorithms/ddpg<span class="w"> </span><span class="nv">envs</span><span class="o">=</span>hide_and_seek_1v1<span class="w"> </span><span class="se">\ </span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>collector.frames_per_batch<span class="o">=</span><span class="m">16</span><span class="w"> </span><span class="nv">batch_size</span><span class="o">=</span><span class="m">16</span><span class="w"> </span>envs.rand_maze<span class="o">=</span>True
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>crew_algorithms/ddpg<span class="w"> </span><span class="nv">envs</span><span class="o">=</span>hide_and_seek_1v1<span class="w"> </span>collector.frames_per_batch<span class="o">=</span><span class="m">16</span><span class="w"> </span><span class="nv">batch_size</span><span class="o">=</span><span class="m">16</span><span class="w"> </span>envs.rand_maze<span class="o">=</span>True
 </span></code></pre></div>
 <p>The script will launch a server instance of the <a href='../dojo/components/games/1v1_hide_and_seek.html'>1 v 1 Hide and Seek</a> game and train an DDPG algorithm on the seeker agent.</p>
 
