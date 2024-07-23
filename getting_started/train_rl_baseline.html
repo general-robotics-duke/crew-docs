@@ -1094,8 +1094,64 @@
   
   
   
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../release_notes.html" class="md-nav__link">
+      <a href="../references/troubleshooting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/release_notes.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1104,6 +1160,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1143,9 +1207,18 @@
 
 <h1 id="train-an-reinforcement-learning-baseline">Train an Reinforcement Learning Baseline</h1>
 <p>RL algorithms are common baselines for measuring AI Agent performance in Human-AI teaming research. Once CREW is installed and the <code>crew</code> conda environment is activated, simply navigate under crew-algorithms and run:</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>crew_algorithms/ddpg<span class="w"> </span><span class="nv">envs</span><span class="o">=</span>hide_and_seek_1v1<span class="w"> </span>collector.frames_per_batch<span class="o">=</span><span class="m">16</span><span class="w"> </span><span class="nv">batch_size</span><span class="o">=</span><span class="m">16</span><span class="w"> </span>envs.rand_maze<span class="o">=</span>True
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>crew_algorithms/ddpg<span class="w"> </span><span class="nv">envs</span><span class="o">=</span>hide_and_seek_1v1<span class="w"> </span>collector.frames_per_batch<span class="o">=</span><span class="m">240</span><span class="w"> </span><span class="nv">batch_size</span><span class="o">=</span><span class="m">240</span><span class="w"> </span><span class="nv">train_batches</span><span class="o">=</span><span class="m">30</span>
 </span></code></pre></div>
-<p>The script will launch a server instance of the <a href='../dojo/components/games/1v1_hide_and_seek.html'>1 v 1 Hide and Seek</a> game and train an DDPG algorithm on the seeker agent.</p>
+<p>The script will first open and close a dummy environment to read the environment specs for creating an agent. Then it will launch a server instance of the <a href='../dojo/components/games/1v1_hide_and_seek.html'>1 v 1 Hide and Seek</a> game and train an DDPG algorithm on the seeker agent.</p>
+<p>By default, CREW uses <a href="https://docs.wandb.ai/">wandb</a> to handle experiment logging. If you have not used wandb before, you can create an account according to their prompt after running the script. You can also disable wandb logging by adding <code>WANDB_MODE=disabled</code> before the python command:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">WANDB_MODE</span><span class="o">=</span>disabled<span class="w"> </span>python<span class="w"> </span>crew_algorithms/ddpg<span class="w"> </span><span class="nv">envs</span><span class="o">=</span>hide_and_seek_1v1<span class="w"> </span>collector.frames_per_batch<span class="o">=</span><span class="m">240</span><span class="w"> </span><span class="nv">batch_size</span><span class="o">=</span><span class="m">240</span><span class="w"> </span><span class="nv">train_batches</span><span class="o">=</span><span class="m">30</span>
+</span></code></pre></div>
+<p>The above script will train the agent for 60 minutes. You should be able to observe decent performance by 20-30 minutes.crew</p>
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true">
+    <source src="./assets/RL_demo.mp4" type="video/mp4">
+  </video>
+</figure>
 
 
 

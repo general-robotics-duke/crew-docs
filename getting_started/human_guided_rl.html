@@ -1094,8 +1094,64 @@
   
   
   
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../release_notes.html" class="md-nav__link">
+      <a href="../references/troubleshooting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/release_notes.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1104,6 +1160,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1142,11 +1206,16 @@
 
 
 <h1 id="running-human-guided-reinforcement-learning">Running Human-guided Reinforcement Learning</h1>
-<p>A direct way for humans to interact with AI agents to provide feedback on the behavior of the agents. Human-guided Reinforcement Learning focuses on how to enable more effecient agent learning by integrating human guidance. CREW provides interfaces of a variety of feedback types. For instance, <a href="https://arxiv.org/abs/1709.10163">Deep TAMER</a> collects discrete binay-valued human feedback and assign it to state-action pairs. To run Deep TAMER on the <a href='../dojo/components/games/bowling.html'>Bowling</a> environment, navigate under <code>crew-algorithms</code> and activate the <code>crew</code> conda environment. Run the following command:</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>crew_algorithms/deep_tamer<span class="w"> </span><span class="nv">envs</span><span class="o">=</span>bowling<span class="w"> </span>collector.frames_per_batch<span class="o">=</span><span class="m">8</span><span class="w"> </span><span class="nv">mini_batch_size</span><span class="o">=</span><span class="m">8</span>
+<p>A direct way for humans to interact with AI agents to provide feedback on the behavior of the agents. Human-guided Reinforcement Learning focuses on how to enable more effecient agent learning by integrating human guidance. CREW provides interfaces of a variety of feedback types. For instance, <a href="https://arxiv.org/abs/1709.10163">Deep TAMER</a> collects discrete binary-valued human feedback and assign it to state-action pairs. To run Deep TAMER on the <a href='../dojo/components/games/bowling.html'>Bowling</a> environment, navigate under <code>crew-algorithms</code> and activate the <code>crew</code> conda environment. Run the following command:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>crew_algorithms/deep_tamer<span class="w"> </span><span class="nv">envs</span><span class="o">=</span>bowling
 </span></code></pre></div>
 <p>The script will launch a server instance of the Bowling game. Then open up the game builds folder <code>crew-dojo/Builds</code> and click on the Bowling server game file under <code>Bowling-Standalone{platform}-Client.</code> This will start a client instance of the game. Log in with an any username and click connect, select the current match, and click <code>Join</code>. You will see a synchronized view of the game in the client instance. On the upper-right corner in <code>Active Clients</code>, click on the AI player. Now you will be able to provide feedback to the agent through the feedback buttons on the right-hand side. Feedback signals collected through this interface will be sent to python and will be used for training. </p>
 <p>You can also chose to provide feedback through a different machine connected to the same local network. Simply open a client instance on the new machine, enter the IP address of the machine hosting the game in the login menu, and the rest is the same.</p>
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true">
+    <source src="./assets/Human-Guided_demo.mp4" type="video/mp4">
+  </video>
+</figure>
 
 
 

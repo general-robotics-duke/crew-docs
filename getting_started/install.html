@@ -391,15 +391,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#5-activate-the-crew-environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      5) Activate the CREW environment.
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1202,8 +1193,64 @@
   
   
   
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../release_notes.html" class="md-nav__link">
+      <a href="../references/troubleshooting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/release_notes.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1212,6 +1259,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1311,15 +1366,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#5-activate-the-crew-environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      5) Activate the CREW environment.
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1344,7 +1390,8 @@
 <div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>CREW
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├──<span class="w"> </span>crew-dojo
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>├──<span class="w"> </span>crew-algorithms
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>└──<span class="w"> </span>Experiment_Pipeline
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>├──<span class="w"> </span>Experiment_Pipeline
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>└──<span class="w"> </span>README.md
 </span></code></pre></div>
 <h4 id="2-create-a-builds-folder-under-crew-dojo">2) Create a <code>Builds</code> folder under <code>crew-dojo</code>.</h4>
 <p>Download game environments for your OS from <a href="https://drive.google.com/drive/folders/1xSSANAID20aG-x0Rn0Z7GAyH4XP_wEtr?usp=sharing">drive</a> and move them under <code>crew-dojo/Builds/</code>. Uncompress the zip files so that it has the following structure:</p>
@@ -1366,9 +1413,20 @@ If successful, it should be running as follows in docker:</p>
 <p>Under crew-algorithms, run:</p>
 <div class="language-shell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>bash<span class="w"> </span>install.sh
 </span></code></pre></div>
-<h4 id="5-activate-the-crew-environment">5) Activate the CREW environment.</h4>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>conda<span class="w"> </span>activate<span class="w"> </span>crew
+<p>This will create a conda environment named <code>crew</code> and install audio-related pakages. For the rest of the dependencies we will use <a href="https://python-poetry.org/">poetry</a>. To install it, first activate the crew environment with <code>conda activate crew</code>, then:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>curl<span class="w"> </span>-sSL<span class="w"> </span>https://install.python-poetry.org<span class="w"> </span><span class="p">|</span><span class="w"> </span>python<span class="w"> </span>-
 </span></code></pre></div>
+<p>A message should appear after the installation indicating poetry's bin directory. Typically for Linux and OSX, it is <code>"$HOME/.local/bin"</code>; for Windows it is <code>$APPDATA\\Python\\Scripts</code>. Add this directory to your 'PATH' environment variable and append this command to your shell configuration file. For instance, on Linux:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;export PATH=&quot;</span><span class="nv">$HOME</span>/.local/bin/:<span class="nv">$PATH</span><span class="s2">&quot;&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">source</span><span class="w"> </span>~/.bashrc
+</span></code></pre></div>
+<p>Check poetry can be properly called with:
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>poetry<span class="w"> </span>--version
+</span></code></pre></div>
+Next, simply run:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>poetry<span class="w"> </span>install
+</span></code></pre></div>
+<p>If you encounter any issues, check out <a href='../references/troubleshooting.html'>Troubleshooting</a>.</p>
 
 
 

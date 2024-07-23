@@ -1094,8 +1094,64 @@
   
   
   
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../release_notes.html" class="md-nav__link">
+      <a href="../references/troubleshooting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/release_notes.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1104,6 +1160,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1142,8 +1206,13 @@
 
 
 <h1 id="playing-a-multiplayer-game">Playing a Multiplayer Game</h1>
-<p>A core feature of CREW is hosting multiplayer games where players can be humans or AI agents. A prebuilt multiplayer game in CREW is <a href='../dojo/components/games/nvn_hide_and_seek.md'>N v N Hide and Seek</a>. </p>
+<p>A core feature of CREW is hosting multiplayer games where players can be humans or AI agents. A prebuilt multiplayer game in CREW is <a href='../dojo/components/games/nvn_hide_and_seek.html'>N v N Hide and Seek</a>. </p>
 <p>To play the game, open the game build folder <code>crew-dojo/Builds</code> and click on the server game file of <code>Hide and Seek</code> under <code>HideAndSeek-Standalone{Platform}-Server</code>. Then for each player, open up a client instance under <code>HideAndSeek-Standalone{Platform}-Client</code> for each computer connected to the same local network as the server. At the login page, type in the IP address of the server computer with any username. Each client instance will be able to see the same server in the match selection menu. Click on it and Join. An empty maze will appear. Go to the menu on the upper-left side, switch from <code>Viewer</code> to <code>Player</code> under the <code>Role</code> dropdown menu. In the waiting room, each client can chose to be a hider or a seeker. Once an equal number of hiders and seekers have been selected, the game will automatically start. Use <code>up</code>, <code>down</code>, <code>left</code>, <code>right</code> keys to control the agent. Once a seeker collides with a hider, the episode ends and will be reset.</p>
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true">
+    <source src="./assets/Multiplayer_demo.mp4" type="video/mp4">
+  </video>
+</figure>
 
 
 
