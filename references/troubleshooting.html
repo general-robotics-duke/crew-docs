@@ -352,6 +352,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/compare_agents.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compare agents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1213,18 +1234,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-python-command-not-found" class="md-nav__link">
+  <a href="#4-edit-the-path-variable-on-windows-manually" class="md-nav__link">
     <span class="md-ellipsis">
-      4) Python: command not found.
+      4) Edit the PATH variable on Windows manually:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-no-module-named-hydra" class="md-nav__link">
+  <a href="#5-python-command-not-found" class="md-nav__link">
     <span class="md-ellipsis">
-      5) No module named 'hydra'
+      5) Python: command not found.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-no-module-named-hydra" class="md-nav__link">
+    <span class="md-ellipsis">
+      6) No module named 'hydra'
     </span>
   </a>
   
@@ -1309,6 +1339,15 @@
   <a href="#3-cannot-open-up-multiple-instances-of-the-same-build-on-mac" class="md-nav__link">
     <span class="md-ellipsis">
       3) Cannot open up multiple instances of the same build on Mac.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-unityapp-is-damaged-and-cant-be-opened" class="md-nav__link">
+    <span class="md-ellipsis">
+      4) Unity.app is damaged and can’t be opened
     </span>
   </a>
   
@@ -1519,18 +1558,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-python-command-not-found" class="md-nav__link">
+  <a href="#4-edit-the-path-variable-on-windows-manually" class="md-nav__link">
     <span class="md-ellipsis">
-      4) Python: command not found.
+      4) Edit the PATH variable on Windows manually:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-no-module-named-hydra" class="md-nav__link">
+  <a href="#5-python-command-not-found" class="md-nav__link">
     <span class="md-ellipsis">
-      5) No module named 'hydra'
+      5) Python: command not found.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-no-module-named-hydra" class="md-nav__link">
+    <span class="md-ellipsis">
+      6) No module named 'hydra'
     </span>
   </a>
   
@@ -1615,6 +1663,15 @@
   <a href="#3-cannot-open-up-multiple-instances-of-the-same-build-on-mac" class="md-nav__link">
     <span class="md-ellipsis">
       3) Cannot open up multiple instances of the same build on Mac.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-unityapp-is-damaged-and-cant-be-opened" class="md-nav__link">
+    <span class="md-ellipsis">
+      4) Unity.app is damaged and can’t be opened
     </span>
   </a>
   
@@ -1753,7 +1810,9 @@
 <div class="language-shell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>poetry<span class="w"> </span>--version
 </span></code></pre></div></p>
 <p>If this still does not work for you, you can try calling poetry explicitly with <code>"$HOME/.local/bin/poetry --version</code>.</p>
-<h4 id="4-python-command-not-found">4) Python: command not found.</h4>
+<h4 id="4-edit-the-path-variable-on-windows-manually">4) Edit the <code>PATH</code> variable on Windows manually:</h4>
+<p>In <code>Search</code>, look for <code>Edit the system environment variables</code> control panel. Find the path variable under <code>Adcanced-System variables-Path</code>. Select it and click <code>edit</code>. Select <code>New</code> and paste the poetry bin path. Cick OK and restart the git bash terminal.</p>
+<h4 id="5-python-command-not-found">5) Python: command not found.</h4>
 <p>Activate the <code>crew</code> enviroment and check the python version:</p>
 <div class="language-shell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python<span class="w"> </span>--version
 </span></code></pre></div>
@@ -1761,7 +1820,7 @@
 <div class="language-shell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">alias</span><span class="w"> </span>python
 </span></code></pre></div>
 <p>If that is the case, you can either <code>unalias python</code> or explicitly call <code>python3.10</code> for experiments in CREW.</p>
-<h4 id="5-no-module-named-hydra">5) No module named 'hydra'</h4>
+<h4 id="6-no-module-named-hydra">6) No module named 'hydra'</h4>
 <p>This indicates that the <code>crew</code> conda environment was not fully installed. Check for any error messages during <code>poetry install</code>.</p>
 <h3 id="installing-dojo">Installing Dojo</h3>
 <h4 id="1-tar-cannot-mkdir-permission-denied">1) Tar: Cannot mkdir permission denied</h4>
@@ -1786,6 +1845,13 @@
 <p>Make sure you have selected the agent in the <code>Activate Clients</code> panel on the client instance.</p>
 <h4 id="3-cannot-open-up-multiple-instances-of-the-same-build-on-mac">3) Cannot open up multiple instances of the same build on Mac.</h4>
 <p>In terminal: <code>open -na Unity</code></p>
+<h4 id="4-unityapp-is-damaged-and-cant-be-opened">4) Unity.app is damaged and can’t be opened</h4>
+<p><div class="language-shell highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Unity.app<span class="w"> </span>is<span class="w"> </span>damaged<span class="w"> </span>and<span class="w"> </span>can’t<span class="w"> </span>be<span class="w"> </span>opened<span class="w"> </span>You<span class="w"> </span>should<span class="w"> </span>move<span class="w"> </span>it<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>Trash.
+</span></code></pre></div>
+If you get this error message on Mac, try running:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>xattr<span class="w"> </span>-cr<span class="w"> </span>/path/to/Unity.app
+</span></code></pre></div>
+<p>This will remove all attributes of the app and allow it to be opened.</p>
 <h3 id="unity-editor">Unity Editor</h3>
 <h4 id="1-play-mode-pause-after-game-start">1) Play mode pause after game start:</h4>
 <p>Check if "Error pause" is turned on in Console.</p>
@@ -1799,9 +1865,9 @@
 <p>This could be a result of assigning the camera to an AIAgent’s sensor. If you would like a camera to render to the AIAgent and the main screen at the same time, create a duplicate of the camera.</p>
 <h3 id="headless-server">Headless Server</h3>
 <h4 id="1-failed-start-x-server">1) Failed start X server:</h4>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="o">(</span>EE<span class="o">)</span><span class="w"> </span>Failed<span class="w"> </span>to<span class="w"> </span>load<span class="w"> </span>module<span class="w"> </span>“nvidia”<span class="w"> </span><span class="o">(</span>module<span class="w"> </span>does<span class="w"> </span>not<span class="w"> </span>exist,<span class="w"> </span><span class="m">0</span><span class="o">)</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="o">(</span>EE<span class="o">)</span><span class="w"> </span>Failed<span class="w"> </span>to<span class="w"> </span>load<span class="w"> </span>module<span class="w"> </span>“ast”<span class="w"> </span><span class="o">(</span>module<span class="w"> </span>does<span class="w"> </span>not<span class="w"> </span>exist,<span class="w"> </span><span class="m">0</span><span class="o">)</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="o">(</span>EE<span class="o">)</span><span class="w"> </span>parse_vt_settings:<span class="w"> </span>Cannot<span class="w"> </span>open<span class="w"> </span>/dev/tty0<span class="w"> </span><span class="o">(</span>Permission<span class="w"> </span>denied<span class="o">)</span>:
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="o">(</span>EE<span class="o">)</span><span class="w"> </span>Failed<span class="w"> </span>to<span class="w"> </span>load<span class="w"> </span>module<span class="w"> </span>“nvidia”<span class="w"> </span><span class="o">(</span>module<span class="w"> </span>does<span class="w"> </span>not<span class="w"> </span>exist,<span class="w"> </span><span class="m">0</span><span class="o">)</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="o">(</span>EE<span class="o">)</span><span class="w"> </span>Failed<span class="w"> </span>to<span class="w"> </span>load<span class="w"> </span>module<span class="w"> </span>“ast”<span class="w"> </span><span class="o">(</span>module<span class="w"> </span>does<span class="w"> </span>not<span class="w"> </span>exist,<span class="w"> </span><span class="m">0</span><span class="o">)</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="o">(</span>EE<span class="o">)</span><span class="w"> </span>parse_vt_settings:<span class="w"> </span>Cannot<span class="w"> </span>open<span class="w"> </span>/dev/tty0<span class="w"> </span><span class="o">(</span>Permission<span class="w"> </span>denied<span class="o">)</span>:
 </span></code></pre></div>
 <p>You need to install the right version of nvidia drivers for the server (515, 535 …)</p>
 
