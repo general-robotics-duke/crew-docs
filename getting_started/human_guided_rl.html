@@ -328,6 +328,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Running Human-Guided RL
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="human_guided_rl.html" class="md-nav__link md-nav__link--active">
         
   
@@ -337,6 +348,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#running-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running GUIDE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-deep-tamer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Deep TAMER
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1213,6 +1261,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#running-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running GUIDE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-deep-tamer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Deep TAMER
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1227,11 +1301,16 @@
 
 
 <h1 id="running-human-guided-reinforcement-learning">Running Human-guided Reinforcement Learning</h1>
-<p>A direct way for humans to interact with AI agents to provide feedback on the behavior of the agents. Human-guided Reinforcement Learning focuses on how to enable more effecient agent learning by integrating human guidance. CREW provides interfaces of a variety of feedback types. For instance, <a href="https://arxiv.org/abs/1709.10163">Deep TAMER</a> collects discrete binary-valued human feedback and assign it to state-action pairs. To run Deep TAMER on the <a href='../dojo/components/games/bowling.html'>Bowling</a> environment, navigate under <code>crew-algorithms</code> and activate the <code>crew</code> conda environment. Run the following command:</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>crew_algorithms/deep_tamer<span class="w"> </span><span class="nv">envs</span><span class="o">=</span>bowling
+<p>A direct way for humans to interact with AI agents to provide feedback on the behavior of the agents. Human-guided Reinforcement Learning focuses on how to enable more effecient agent learning by integrating human guidance. CREW provides interfaces of a variety of feedback types. For instance, <a href="https://arxiv.org/abs/1709.10163">Deep TAMER</a> collects discrete binary-valued human feedback and assign it to state-action pairs. To run Deep TAMER on the <a href='../dojo/components/games/bowling.html'>Bowling</a> environment, navigate under <code>crew-algorithms</code> and activate the <code>crew</code> conda environment. We provide two examples of human-guided RL: 1) <a href="link_to_guide">GUIDE</a> 2) <a href="https://arxiv.org/abs/1709.10163">Deep TAMER</a>.</p>
+<h2 id="running-guide">Running GUIDE</h2>
+<p>GUIDE is a general framework that can be incorporated with any  off-policy RL algorithm. For Instance, to run GUIDE with a DDPG backbone:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>crew_algorithms/ddpg<span class="w"> </span><span class="nv">envs</span><span class="o">=</span>bowling<span class="w"> </span>collector.frames_per_batch<span class="o">=</span><span class="m">120</span><span class="w"> </span><span class="nv">batch_size</span><span class="o">=</span><span class="m">120</span><span class="w"> </span><span class="nv">train_batches</span><span class="o">=</span><span class="m">30</span><span class="w"> </span><span class="nv">hf</span><span class="o">=</span>True<span class="w"> </span>
 </span></code></pre></div>
-<p>The script will launch a server instance of the Bowling game. Then open up the game builds folder <code>crew-dojo/Builds</code> and click on the Bowling server game file under <code>Bowling-Standalone{platform}-Client.</code> This will start a client instance of the game. Log in with an any username and click connect, select the current match, and click <code>Join</code>. You will see a synchronized view of the game in the client instance. On the upper-right corner in <code>Active Clients</code>, click on the AI player. Now you will be able to provide feedback to the agent through the feedback buttons on the right-hand side. Feedback signals collected through this interface will be sent to python and will be used for training. </p>
+<p>The script will launch a server instance of the Bowling game. Then please manually open up the game builds folder <code>crew-dojo/Builds</code> and click on the Bowling server game file under <code>Bowling-Standalone{platform}-Client.</code> This will start a client instance of the game. Log in with an any username and click connect, select the current match, and click <code>Join</code>. You will see a synchronized view of the game in the client instance. On the upper-right corner in <code>Active Clients</code>, click on the AI player. Now you will be able to provide feedback to the agent through the feedback buttons on the right-hand side. Feedback signals collected through this interface will be sent to python and will be used for training. GUIDE uses continuous feedback, so simple hover your mouse over the continuous feedback window to provide feedback for every time step.</p>
 <p>You can also chose to provide feedback through a different machine connected to the same local network. Simply open a client instance on the new machine, enter the IP address of the machine hosting the game in the login menu, and the rest is the same.</p>
+<h2 id="running-deep-tamer">Running Deep TAMER</h2>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>crew_algorithms/deep_tamer<span class="w"> </span><span class="nv">envs</span><span class="o">=</span>bowling
+</span></code></pre></div>
 <figure class="video_container">
   <video controls="true" allowfullscreen="true">
     <source src="./assets/Human-Guided_demo.mp4" type="video/mp4">
